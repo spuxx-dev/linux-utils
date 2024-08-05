@@ -22,7 +22,7 @@ export HOMEBREW_NO_AUTO_UPDATE=true
 brew install kubectl
 brew install k9s
 brew install pnpm
-brew install rust
+brew install rustup
 
 echo "Installing and setting up nvm..."
 # NVM needs to be checked a bit differently because its not being installed,

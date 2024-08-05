@@ -8,3 +8,5 @@ alias install-dev-essentials='~/linux-utils/scripts/install-dev-essentials.sh'
 alias update='~/linux-utils/scripts/run-updates.sh'
 alias check-port='f() { do netstat -tulpn | grep $1; unset -f f; }; f'
 
+# PATH includes
+export PATH=$PATH:/home/linuxbrew/.linuxbrew/opt/rustup/bin
