@@ -24,19 +24,4 @@ brew install k9s
 brew install pnpm
 brew install rustup
 
-echo "Installing and setting up nvm..."
-# NVM needs to be checked a bit differently because its not being installed,
-# but only sourced as a shell functiion.
-if [ -d "$HOME/.nvm" ]; then
-    echo "nvm is already installed."
-else
-    brew install nvm
-    echo '
-
-export NVM_DIR="$HOME/.nvm"
-  [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
-  [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
-' >> ~/.bashrc
-fi
-
 echo All done! 🚀 
