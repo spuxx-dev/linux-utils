@@ -21,6 +21,7 @@ echo "Installing essential development packages..."
 export HOMEBREW_NO_AUTO_UPDATE=true
 brew install kubectl
 brew install k9s
+brew install node
 brew install pnpm
 brew install rustup
 
