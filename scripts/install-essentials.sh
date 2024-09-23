@@ -16,13 +16,15 @@ if [ "$PKG_MANAGER" == "apt" ]; then
         net-tools \
         curl \
         git \
-        wget
+        wget \
+        ncdu
 elif [ "$PKG_MANAGER" == "dnf" ]; then
     sudo dnf install -y \
         @development-tools \
         net-tools \
         curl \
         git \
-        wget
+        wget \
+        ncdu
 fi
 echo "Essential packages installed successfully."
