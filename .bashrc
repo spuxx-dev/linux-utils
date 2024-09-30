@@ -10,3 +10,6 @@ alias check-port='f() { do netstat -tulpn | grep $1; unset -f f; }; f'
 
 # PATH includes
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/opt/rustup/bin
+
+# Set kubectl editor to nano
+export KUBE_EDITOR=nano
