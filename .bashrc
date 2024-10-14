@@ -9,9 +9,10 @@ alias update='~/linux-utils/scripts/run-updates.sh'
 alias check-port='f() { do netstat -tulpn | grep $1; unset -f f; }; f'
 
 # Export UID/GID
-export UID=$(id -u)
-export GID=$(id -g)
-
+if [ -z "${UID}" ] || [ -z "${GID}" ]; then
+  export UID=$(id -u)
+  export GID=$(id -g)
+fi
 # PATH includes
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/opt/rustup/bin
 
