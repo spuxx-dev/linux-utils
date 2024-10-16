@@ -8,6 +8,7 @@ alias install-dev-essentials='~/linux-utils/scripts/install-dev-essentials.sh'
 alias update='~/linux-utils/scripts/run-updates.sh'
 alias backup='~/linux-utils/scripts/backup.sh'
 alias check-port='f() { do netstat -tulpn | grep $1; unset -f f; }; f'
+alias flux-reconcile='flux reconcile source git flux-system; flux reconcile kustomization flux-system'
 
 # PATH includes
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/opt/rustup/bin
