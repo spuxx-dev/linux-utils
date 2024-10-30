@@ -10,6 +10,10 @@ alias backup='~/linux-utils/scripts/backup.sh'
 alias check-port='f() { do netstat -tulpn | grep $1; unset -f f; }; f'
 alias flux-reconcile='flux reconcile source git flux-system; flux reconcile kustomization flux-system'
 
+# Other aliases
+alias spotify='flatpak run com.spotify.Client --force-device-scale-factor'
+alias spotify2x='flatpak run com.spotify.Client --force-device-scale-factor=2'
+
 # PATH includes
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/opt/rustup/bin
 
@@ -21,3 +25,6 @@ export KUBE_EDITOR=nano
 #   export UID=$(id -u)
 #   export GID=$(id -g)
 # fi
+
+# Export Node options
+# export NODE_OPTIONS="$NODE_OPTIONS --preserve-symlinks"
