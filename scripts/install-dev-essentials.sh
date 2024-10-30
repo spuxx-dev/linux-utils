@@ -24,5 +24,6 @@ brew install k9s
 brew install node
 brew install pnpm
 brew install rustup
+brew install just
 
 echo All done! 🚀 
