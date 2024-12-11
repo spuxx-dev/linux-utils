@@ -16,7 +16,8 @@
     "context": "Editor",
     "bindings": {
       "ctrl-<": "editor::ToggleComments",
-      "ctrl-d": "editor::DuplicateLineDown"
+      "ctrl-d": "editor::DuplicateLineDown",
+      "ctrl-shift-c": "assistant::ToggleFocus"
     }
   }
 ]
