@@ -1,5 +1,27 @@
 #!/bin/bash
 
+if command -v apt > /dev/null; then
+    PKG_MANAGER="apt"
+elif command -v dnf > /dev/null; then
+    PKG_MANAGER="dnf"
+else
+    >&2 echo "Error: Unknown package manager"
+    exit 1
+fi
+echo "Package manager detected: $PKG_MANAGER"
+
+echo "Installing dev packages..."
+if [ "$PKG_MANAGER" == "apt" ]; then
+    sudo apt update
+    sudo apt install -y \
+        libxkbcommon-dev
+elif [ "$PKG_MANAGER" == "dnf" ]; then
+    sudo dnf install -y \
+        libxkbcommon-devel
+fi
+echo "Dev packages installed successfully."
+
+
 command_exists() {
     command -v "$1" >/dev/null 2>&1
 }
@@ -19,6 +41,7 @@ brew update
 
 echo "Installing essential development packages..."
 export HOMEBREW_NO_AUTO_UPDATE=true
+brew install dive
 brew install kubectl
 brew install k9s
 brew install node
