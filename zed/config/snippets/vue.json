@@ -1,0 +1,16 @@
+{
+  "Setup Vue3 component": {
+    "prefix": "vue3",
+    "description": "Creats a Vue 3 component.",
+    "body": [
+      "<script setup lang=\"ts\"></script>",
+      "",
+      "<template>",
+      "  $0",
+      "</template>",
+      "",
+      "<style scoped></style>",
+      ""
+    ]
+  }
+}

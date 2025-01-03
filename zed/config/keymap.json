@@ -17,7 +17,8 @@
     "bindings": {
       "ctrl-<": "editor::ToggleComments",
       "ctrl-d": "editor::DuplicateLineDown",
-      "ctrl-shift-c": "assistant::ToggleFocus"
+      "ctrl-shift-c": "assistant::ToggleFocus",
+      "ctrl-shift-a": "editor::ToggleInlineCompletions"
     }
   }
 ]
