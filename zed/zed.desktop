@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Zed
+Comment=High-performance, multiplayer code editor
+Exec=flatpak run dev.zed.Zed %F
+Icon=dev.zed.Zed
+Type=Application
+Categories=Development;TextEditor;
+MimeType=text/plain;
+Terminal=false
+StartupNotify=true
