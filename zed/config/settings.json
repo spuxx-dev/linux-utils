@@ -19,7 +19,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Atelier Lakeside Dark"
+    "dark": "Andromeda"
   },
   "indent_size": 2,
   "git": {
@@ -43,6 +43,9 @@
         "allowed": true,
         "parser": "astro"
       }
+    },
+    "Markdown": {
+      "soft_wrap": "editor_width"
     }
   }
 }
