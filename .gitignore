@@ -1,4 +1,4 @@
 office/ocr-input/*
+!office/ocr-input/.gitkeep
 office/ocr-output/*
-
-!.gitkeep
+!office/ocr-output/.gitkeep
