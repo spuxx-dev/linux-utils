@@ -5,11 +5,16 @@ chmod +x ~/linux-utils/scripts/*.sh
 alias resource='source ~/.bashrc'
 alias install-essentials='~/linux-utils/scripts/install-essentials.sh'
 alias install-dev-essentials='~/linux-utils/scripts/install-dev-essentials.sh'
+
 alias update='~/linux-utils/scripts/run-updates.sh'
 alias backup='~/linux-utils/scripts/backup.sh'
 alias check-port='f() { do netstat -tulpn | grep $1; unset -f f; }; f'
 alias flux-reconcile='flux reconcile source git flux-system; flux reconcile kustomization flux-system'
 alias zed='flatpak run dev.zed.Zed'
+
+# Office aliases
+alias install-office-essentials='~/linux-utils/scripts/install-office-essentials.sh'
+alias run-ocr='~/linux-utils/scripts/run-ocr.sh'
 
 # Other aliases
 alias spotify='flatpak run com.spotify.Client --force-device-scale-factor'
