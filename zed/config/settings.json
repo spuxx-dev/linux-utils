@@ -7,6 +7,7 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+  "format_on_save": "on",
   "assistant": {
     "default_model": {
       "provider": "zed.dev",

@@ -18,7 +18,9 @@
       "ctrl-<": "editor::ToggleComments",
       "ctrl-d": "editor::DuplicateLineDown",
       "ctrl-shift-c": "assistant::ToggleFocus",
-      "ctrl-shift-a": "editor::ToggleInlineCompletions"
+      "ctrl-shift-a": "editor::ToggleInlineCompletions",
+      "alt-left": "editor::Outdent",
+      "alt-right": "editor::Indent"
     }
   }
 ]
