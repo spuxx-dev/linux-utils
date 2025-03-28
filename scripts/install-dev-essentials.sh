@@ -44,6 +44,7 @@ export HOMEBREW_NO_AUTO_UPDATE=true
 brew install gitui
 brew install kubectl
 brew install k9s
+brew install siderolabs/tap/talosctl
 brew install nvm
 brew install pnpm
 brew install rustup
