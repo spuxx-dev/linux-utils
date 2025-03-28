@@ -19,6 +19,7 @@ alias run-ocr='~/linux-utils/scripts/run-ocr.sh'
 # Other aliases
 alias spotify='flatpak run com.spotify.Client --force-device-scale-factor'
 alias spotify2x='flatpak run com.spotify.Client --force-device-scale-factor=2'
+sudo ip -4 addr del 172.18.0.1/16 dev br-9e9ad0e1c753 # May help when train wifi won't connect :-)
 
 # PATH includes
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/opt/rustup/bin
