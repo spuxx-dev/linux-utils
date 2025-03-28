@@ -20,7 +20,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Andromeda"
+    "dark": "Material Dark"
   },
   "indent_size": 2,
   "git": {
@@ -29,7 +29,7 @@
     }
   },
   "features": {
-    "inline_completion_provider": "supermaven"
+    "edit_prediction_provider": "supermaven"
   },
   "languages": {
     "CSS": {
