@@ -49,5 +49,6 @@ brew install nvm
 brew install pnpm
 brew install rustup
 brew install just
+brew install deno
 
 echo All done! 🚀
