@@ -5,6 +5,7 @@ paths_to_backup=(
     "~/.ssh"
     "~/.kube/config"
     "~/kube"
+    "~/.talos/config"
     # Add more paths as needed
 )
 
@@ -52,7 +53,7 @@ for path in "${paths_to_backup[@]}"; do
         target_path="$target_folder${expanded_path#$HOME}"
         target_dir=$(dirname "$target_path")
         mkdir -p "$target_dir"
-        
+
         echo "Copying $path to $target_path (${current_item}/${total_items})"
         cp -R "$expanded_path" "$target_path" 2>/dev/null
     else
